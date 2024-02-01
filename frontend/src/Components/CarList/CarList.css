@@ -11,7 +11,7 @@
 .car-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 21px;
     justify-content: center;
     align-items: center;
 }
