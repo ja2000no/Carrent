@@ -1,0 +1,104 @@
+/* Styl dla kontenera logowania */
+.signup-container {
+  width: 70%;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+  
+/* Styl dla wnętrza kontenera logowania */
+.signup-container-inside {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+  
+  /* Styl dla labeli */
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  /* Styl dla inputów */
+  input {
+    width: calc(100% - 12px); /* Szerokość inputu odjęta od paddingu */
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+.hide {
+  display: none;
+}
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #d0d0d0;
+  color: #000000;
+  padding: 0;
+  position: relative;
+  bottom: 1px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+/* Media query dla urządzeń o szerokości poniżej 768px */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 90%; /* Zmiana szerokości na mniejszą dla mniejszych urządzeń */
+    height: auto; /* Dostosowanie wysokości automatycznie */
+    top: unset; /* Usunięcie wartości top */
+    left: unset; /* Usunięcie wartości left */
+    transform: unset; /* Usunięcie transformacji */
+  }
+
+  .signup-container-inside {
+    width: 80%; /* Zmiana szerokości wnętrza dla mniejszych urządzeń */
+    margin-top: 20px; /* Dodanie odstępu u góry */
+    margin-bottom: 20px; /* Dodanie odstępu na dole */
+  }
+}
